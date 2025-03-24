@@ -17,9 +17,9 @@ msg = EmailMessage()
 msg["From"] = f"Follow-Up <{username}>"
 
 msg["To"] = recipient_email
-msg["Subject"] = "Abu Rmeileh Abd Elkarim"
+msg["Subject"] = "Abu Rmeileh Abd Elkarem"
 
-msg.set_content("""Hi Abu Rmeileh Abd Elkarim,
+msg.set_content("""Hi Abu Rmeileh Abd Elkarem,
 
 I’m writing to kindly follow up regarding a few outstanding responsibilities we discussed earlier. I would really appreciate it if you could let me know how you plan to move forward with them.
 
@@ -30,7 +30,7 @@ msg.add_alternative("""
 <html>
   <body style="background-color: #f4f4f4; padding: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <div style="max-width: 600px; margin: auto; background-color: #fce8d5; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 30px;">
-      <p style="font-size: 16px; color: #333;">Hi Abu Rmeileh Abd Elkarim,</p>
+      <p style="font-size: 16px; color: #333;">Hi Abu Rmeileh Abd Elkarem,</p>
 
       <p style="font-size: 15px; color: #444; line-height: 1.6;">
         I’m writing to kindly follow up regarding a few outstanding responsibilities we discussed earlier.
