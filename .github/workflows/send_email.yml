@@ -1,7 +1,10 @@
 name: Send Styled Email
 
 on:
-  workflow_dispatch:  # Allows you to trigger manually from GitHub UI
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+  schedule:
+    - cron: '0 * * * *'  # runs at the top of every hour (UTC)
+
 
 jobs:
   send_email:
