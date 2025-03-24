@@ -1,8 +1,18 @@
 import smtplib
 from email.message import EmailMessage
 from dotenv import load_dotenv
+from datetime import datetime, timezone
+
 import os
 import sys
+import random
+import time
+
+# Random delay to reduce spam flagging
+delay_seconds = random.randint(60, 720)  # wait 1–7 minutes
+print(f"⏳ Sleeping for {delay_seconds} seconds before sending email...")
+time.sleep(delay_seconds)
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -67,3 +77,8 @@ try:
         print("Email sent successfully.")
 except Exception as e:
     print(f"Failed to send email: {e}")
+
+# After successful send
+
+now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+print(f"✅ Email sent successfully at {now}")
