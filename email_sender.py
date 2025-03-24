@@ -8,9 +8,9 @@ import sys
 load_dotenv()
 
 # Get credentials and recipient from .env
-username = os.getenv("EMAIL_USERNAME")
-password = os.getenv("EMAIL_PASSWORD")
-recipient_email = os.getenv("EMAIL_RECIPIENT")
+username = os.getenv("EMAIL_USERNAME").strip()
+password = os.getenv("EMAIL_PASSWORD").strip()
+recipient_email = os.getenv("EMAIL_RECIPIENT").strip()
 
 # Compose the email
 msg = EmailMessage()
